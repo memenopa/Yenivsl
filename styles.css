@@ -1,0 +1,57 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #111;
+  color: #fff;
+}
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #000, #333);
+}
+.gallery, .about, .contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+.grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.grid img:hover {
+  transform: scale(1.05);
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+}
+a {
+  color: #0cf;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 2s ease-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
